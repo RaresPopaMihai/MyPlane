@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:id="@+id/tvManufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="29dp"
+        android:layout_toStartOf="@+id/tvModel"
+        android:fontFamily="@font/krona_one"
+        android:text="Boeing"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/krona_one"
+        android:text="777-777 Dream Liner"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imgManufacturer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvManufacturer"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="29dp"
+        android:src="@drawable/manufacturer" />
+
+    <TextView
+        android:id="@+id/tvEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgManufacturer"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/imgManufacturer"
+        android:fontFamily="@font/krona_one"
+        android:gravity="center"
+        android:text="Engine: Petrol"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/imgManufacturer"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tvMaxSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Max Speed:1000KM/H"/>
+
+        <TextView
+            android:id="@+id/tvCeilingAltitude"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Ceiling Altitude: 10000 meters"/>
+        <TextView
+            android:id="@+id/tvRange"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Range: 1000 nautical miles"/>
+        <TextView
+            android:id="@+id/tvGrossWeight"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Gross Weight: 1000 tons"/>
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Length: 1000 M"/>
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Height: 1000 M"/>
+        <TextView
+            android:id="@+id/tvWingSpan"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:layout_marginStart="30dp"
+            android:textSize="15dp"
+            android:text="Wing Span: 1000 M"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AirplaneFragment"
+    android:background="@android:color/transparent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvSearchModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/krona_one"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Model" />
+
+    <EditText
+        android:id="@+id/etSearchModel"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Insert model..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:layout_below="@id/tvSearchModel"/>
+
+    <ListView
+        android:id="@+id/lvAirplane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearchModel"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlAirListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAirlinerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/krona_one"
+            android:text="Airliner Name"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@id/imgAirliner"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgAirliner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/airliner" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvAirlinerCodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/krona_one"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/rlAirListHeader"
+        android:layout_centerHorizontal="true"
+        android:text="CODES"/>
+
+    <RelativeLayout
+        android:id="@+id/rlAirListContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAirlinerCodes">
+
+        <TextView
+            android:id="@+id/tvAirlinerIata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/krona_one"
+            android:text="IACA:WIZZ"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvAirlinerIcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/krona_one"
+            android:text="ICAO:WZZ"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvTotalAircrafts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAirlinerIata"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/krona_one"
+            android:text="Total Aircrafts:"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvAircraftNameHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:text="Aircraft"
+            android:textSize="15dp"
+            android:layout_below="@id/tvTotalAircrafts"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/tvAirlinerIata"/>
+
+        <TextView
+            android:id="@+id/tvAircraftCountHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:text="Count"
+            android:textSize="15dp"
+            android:layout_below="@id/tvTotalAircrafts"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/tvAirlinerIcao"/>
+
+        <TextView
+            android:id="@+id/tvAircraftName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:text="A123"
+            android:textSize="15sp"
+            android:layout_below="@id/tvAircraftNameHead"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/tvAircraftNameHead"/>
+
+        <TextView
+            android:id="@+id/tvAircraftCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one"
+            android:text="22012"
+            android:textSize="15sp"
+            android:layout_below="@id/tvAircraftCountHead"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/tvAircraftCountHead"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
